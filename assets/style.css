@@ -9,6 +9,7 @@ padding: 0;
 background: #f6821f;
 width: 100%;
 padding: 0;
+z-index: 3;
 }
 
 
@@ -73,22 +74,28 @@ li {
 /*----------Body---------*/
 
 body {
-    padding: 0px;
+    padding: 0px; 
+    background-image: url("plane.jpg");
+    background-repeat: no-repeat;
+    background-position: center 50px;
 }
 
 .section {
     padding:50px 0 0 0;
-   /* background-image: url("sunset.jpg");*/
+   /* background-image: url("plane.jpg");
+    background-size: 80%;
+    background-position: center center; 
+    background-repeat: no-repeat;*/
 }
 
-.logo {
-    background-image: url("airplaneglobe.jpg");
-    background-size: 60%;
-    background-position: center ; 
+/*.logo {
+    background-image: url("plane.jpg");
+    background-size: 80%;
+    background-position: center center; 
     background-repeat: no-repeat;
     padding-top: 50px;
-    z-index: -1;
-}
+    
+}*/
 
 .header {
     font-family: "Satisfy", sans-serif;
@@ -107,7 +114,6 @@ body {
     font-size: 22px;
     text-align: justify;
     z-index: 1;
-    color:#1F86C9;
 }
 
 .bringForward1{
@@ -119,28 +125,25 @@ body {
 
 .splitSection {
     height: 100%;
-    width: 35%;
+    width: 40%;
     position: fixed;
     z-index: 2;
-    top: 100px;
+    top: 130px;
     bottom:0;
     overflow-x: hidden;
     padding-top: 20px;
-    padding-left: 5px;
 }
 
 .splitSection2 {
     height: 100%;
-    width: 65%;
+    width: 60%;
     position: fixed;
-    top: 65px;
+    top: 130px;
     bottom:20px;
     overflow-x: hidden;
-    padding-top: 65px;
-    padding-left: 10px;
+    padding-top: 20px;
     z-index: 2;
 }
-
 
 .left {
     left:10px;
@@ -149,15 +152,15 @@ body {
 
 .right {
     right:10px;
-    padding-left: 20px;
+    padding-left: 60px;
 }
 
 .spacing {
     font-style: bold;
     font-size: 35px;
     padding-bottom: 15px;
-    text-decoration: underline;
-    color:#1F86C9;
+    text-decoration: underline;  
+    top:100px;
 }
 
 /*----------Footer---------*/
@@ -172,7 +175,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0px;;
-    
+    z-index: 3;
 }
 
 .footerbreak {
@@ -180,7 +183,7 @@ footer {
     margin: 5px;
     width: 95%;
     text-align: justify;
-    z-index: -1;
+    z-index: 3;
     font-weight: 600;
     font-family: "Roboto", sans-serif;
 }
@@ -201,8 +204,8 @@ footer {
 }
 
 .infobutton:hover {
-    background-color:rgb(245, 241, 26);
-    color:white;
+    background-color: #1F86C9;
+    color: #f6821f;
     }
 
 .contactPosition {
