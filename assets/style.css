@@ -83,20 +83,21 @@ body {
 .logo {
     background-image: url("airplaneglobe.jpg");
     background-size: 80%;
-    background-position: center 130px ; 
+    background-position: center 100px ; 
     background-repeat: no-repeat;
     z-index: -1;
 }
 
-.bringForward{
+.subsection{
     font-weight: 1000;
+    font-size: 12px;
     text-align: justify;
     z-index: 1;
 }
 
 .bringForward1{
     font-weight: 1000;
-    font-size:20px;
+    font-size:15px;
     text-align: justify;
     z-index: 1;
 }
