@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="assets/style.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|satisfy|Lobster|Roboto&display=swap" rel="stylesheet"> 
+        <title>Dulat - The Adult Only Holiday specialists</title>
+    </head>
+    <body>
+        <header>
+            <div class="background titleStyle col-12">
+                <img src="assets/sunset.jpg"alt="sunset logo" width="50" height="50">
+                 Dulat - The Adult Only Holiday Specialists 
+                <div>
+                    <ul>
+                    <li><a href="index.html" class="navbar col-4"><i class="fa fa-home fa-lg"> Home</i></a></li>
+                    <li><a href="search.html" class="navbar col-4"><i class="fa fa-suitcase fa-lg"> Search Holidays</i></a></li>
+                    <li><a href="contact.html" class="navbar active col-4"><i class="fa fa-phone-square fa-lg"> Contact Us</i></a></li>
+                    </ul> 
+                </div>
+            </div>
+        </header>
+        <section>
+            <div>
+                <div>
+                    <div>
+                        <h2 class="bold text-center">CONTACT FORM</h2>
+                        <h4 class="bold text-center">Need help in finding the right destination for your next holiday?</h4>
+                        <div class="center-form splitSection3 left">
+                        <form onsubmit="return sendMail(this);">
+                            <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/><br>
+                            <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                            <br><span class="bold">What type of holiday would you like to go on?</span>
+                            <br><input type="checkbox" id="sun" name="Sun Holiday" value="Sun">
+                            <label for="sun"> I want a sun holiday  </label>
+                            <br><input type="checkbox" id="city" name="City Holiday" value="City">
+                            <label for="city"> I want a city break  </label>
+                            <br><input type="checkbox" id="citysun" name="City and Sun Holiday" value="Citysun">
+                            <label for="citysun"> I want a city break  </label></p>
+                            <span class="bold">What dates would you like to go?</span><br>
+                            <label for="startdate">Start date:</label>
+                            <input type="date" id="startdate" name="Start Date">
+                            <label for="enddate">   End date:</label>
+                            <input type="date" id="enddate" name="End Date"><br>
+                            <label class="bold" for="quantity">How many people are travelling? (1-10):</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+                            <textarea rows="10" name="holidaywishlist" id="holidaywishlist" placeholder="Other Holiday Wishlist Details" required></textarea></br>
+                            <br><button type="submit" class="buttonColor ">Submit Form</button>
+                        </form>
+                        <div class="center-form splitSection4 right">
+                            <h3 class="bold  text-center">What our customers say about us!</h3>
+                                <div class="border1">
+                                <p><h5 class="blog font1">Easiest way to find the right holiday</h5></p>
+                                    <p>We had never travelled to Turkey and had no idea where to book. 
+                                    You managed to advise us on the best adult only resorts in Turkey. Thanks for all your help. 
+                                    <span class="blog font1">  - Susan Smith</span></p>
+                                </div>
+                                <div class="border1">
+                                <p><h5 class="blog font1">Hassle Free</h5></p>
+                                    <p>They have found me some of the best Adult Only holidays that are available. You made it hassle free planning.  
+                                    <span class="blog font1">  - John Dory</span></p>
+                                </div>
+                                <div class="border1">
+                                <p><h5 class="blog font1">Top class service</h5></p>
+                                    <p>What can i say, I have used your services for the past few years and each year you find me a better holiday than the year before.  
+                                    <span class="blog font1">  - Peter Jones</span></p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+            </div>
+         </section>
+        <footer>
+            <div class="footermessage">
+                <p class="footerbreak">
+                <span class="contactPosition"> Contact Us @ 
+                <a href="contact.html" target="_blank">
+                    <i class="fa fa-phone-square infobutton" aria-hidden="true"></i>
+                </a>
+                </span>
+                <span class="linkPosition">Find us @ 
+                <a target="_blank" href="https://www.facebook.com/"> 
+                    <i class="fa fa-facebook infobutton" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
+                </a>
+                <a target="_blank" href="https://twitter.com/Twitter">
+                    <i class="fa fa-twitter infobutton" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter</span>
+                </a>
+                </span>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
