@@ -38,7 +38,7 @@
                         <h2 class="bold text-center">CONTACT FORM</h2>
                         <h4 class="bold text-center">Need help in finding the right destination for your next holiday?</h4>
                         <div class="center-form splitSection3 left">
-                        <form onsubmit="return sendMail(this);" method="POST">
+                        <form id="Form" onsubmit="return sendMail(this);" method="POST">
                             <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/><br>
                             <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                             <label for="destination" class="bold"> Where would you like to travel?</label></p>
@@ -51,7 +51,8 @@
                             <label class="bold" for="quantity">How many people are travelling? (1-10):</label>
                             <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
                             <textarea rows="10" name="holidaywishlist" id="holidaywishlist" placeholder="Other Holiday Wishlist Details" required></textarea></br>
-                            <br><button type="submit" class="buttonColor ">Submit Form</button>
+                            <br><button type="submit" class="buttonColor" >Submit Form </button>
+                            <input type="reset" value="Reset Form" class="reset"/>
                         </form>
                         <div class="center-form splitSection4 right">
                             <h3 class="bold  text-center">What our customers say about us!</h3>
