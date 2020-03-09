@@ -10,12 +10,6 @@
         <link rel="stylesheet" href="assets/style.css" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|satisfy|Lobster|Roboto&display=swap" rel="stylesheet"> 
         <title>Dulat - The Adult Only Holiday specialists</title>
-         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function(){
-            emailjs.init("user_brFg1kL10W9ZxUU9NEcTn");
-            })();
-        </script>
     </head>
     <body>
         <header>
@@ -25,14 +19,24 @@
                 <div>
                     <ul>
                     <li><a href="index.html" class="navbar col-4"><i class="fa fa-home fa-lg"> Home</i></a></li>
-                    <li><a href="search.html" class="navbar active  col-4"><i class="fa fa-suitcase fa-lg"> Search Holidays</i></a></li>
-                    <li><a href="contact.html" class="navbar col-4"><i class="fa fa-phone-square fa-lg"> Contact Us</i></a></li>
+                    <li><a href="search.html" class="navbar col-4"><i class="fa fa-suitcase fa-lg"> Search Holidays</i></a></li>
+                    <li><a href="contact.html" class="navbar active col-4"><i class="fa fa-phone-square fa-lg"> Contact Us</i></a></li>
                     </ul> 
                 </div>
             </div>
         </header>
-        <section >
-         </section>
+                <h4>Where would you like to travel?</h4></div>
+                <form id="FormSearch" onsubmit="return sendMail(this);" method="POST">
+                    <input type="text" name="destination" class="form-control" id="destination" placeholder="Destination of travel"/>
+                    <button type="submit" class="buttonColor" >Submit </button>
+                </form>
+                <div class="row">
+                    <div class="col-8"><h4>Book a room?</h4></div>
+                    <div class="col-4"><h4>Weather</h4></div>
+                    </div>
+                <div><h4>Map of the area.</h4></div>
+                <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+                <div id="map" class="col-12"></div>
         <footer>
             <div class="footermessage">
                 <p class="footerbreak">
@@ -54,6 +58,8 @@
                 </p>
             </div>
         </footer>
-        <script src="assets/js/email.js"></script>
+        <script src="assets/js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqY5c5NpZ_TXP8kMlbhSkxeqrFQw6fMAQ&libraries=places&callback=initMap"
+    async defer></script>
     </body>
 </html>

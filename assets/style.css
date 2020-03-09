@@ -217,6 +217,16 @@ textarea {
     background-color: rgb(8, 202, 8);
 }
 
+html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+#map {
+        height: 50%;
+      }
+
 /*----------Footer---------*/
 
 footer {
