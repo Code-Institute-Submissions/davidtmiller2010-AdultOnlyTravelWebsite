@@ -17,20 +17,20 @@ button.addEventListener('click',function(){
 fetch('https://api.openweathermap.org/data/2.5/forecast?q='+inputValue.value+'&appid=c599e8cf88222b89d3d7fce3b12be2a1')
 .then(response => response.json())
 .then(data => {
-    dateValue = data[3]['sys']['dt_txt'];
-    descValue = data[3]['weather'][0]['description'];
-    iconValue = data[3]['weather'][0]['icon'];
-    tempValue = data[3]['main']['temp'];
+    dateValue = data['list'][3]['sys']['dt_txt'];
+    descValue = data['list'][3]['weather'][0]['description'];
+    iconValue = data['list'][3]['weather'][0]['icon'];
+    tempValue = data['list'][3]['main']['temp'];
 
-    date2Value = data[11]['sys']['dt_txt'];
-    desc2Value = data[11]['weather'][0]['description'];
-    icon2Value = data[11]['weather'][0]['icon'];
-    temp2Value = data[11]['main']['temp'];
+    date2Value = data['list'][11]['sys']['dt_txt'];
+    desc2Value = data['list'][11]['weather'][0]['description'];
+    icon2Value = data['list'][11]['weather'][0]['icon'];
+    temp2Value = data['list'][11]['main']['temp'];
 
-    date3Value = data[19]['sys']['dt_txt'];
-    desc3Value = data[19]['weather'][0]['description'];
-    icon3Value = data[19]['weather'][0]['icon'];
-    temp3Value = data[19]['main']['temp'];
+    date3Value = data['list'][19]['sys']['dt_txt'];
+    desc3Value = data['list'][19]['weather'][0]['description'];
+    icon3Value = data['list'][19]['weather'][0]['icon'];
+    temp3Value = data['list'][19]['main']['temp'];
 
     date.innerHTML =dateValue;
     desc.innerHTML =descValue;
