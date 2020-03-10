@@ -36,7 +36,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+inputValue.value+'&a
 
     date.innerHTML =dateValue;
     desc.innerHTML =descValue;
-    icon.innerHTML =fetch("http://openweathermap.org/img/wn/"+ iconValue +".png");
+    icon.innerHTML ='http://openweathermap.org/img/wn/'+ iconValue +".png";
     temp.innerHTML =tempValue;
 
     date2.innerHTML =date2Value;
