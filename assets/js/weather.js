@@ -48,6 +48,8 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q='+inputValue.value+'&a
     desc3.innerHTML =desc3Value;
     icon3.innerHTML =icon3Value;
     temp3.innerHTML =temp3Value;
+
+    $(".icon").html("<img src='http://openweathermap.org/img/w/" + data.weather[0].icon + ".png' alt='Icon depicting current weather.'>");
     })
 .catch(err => alert("Please enter a valid city"))
 
