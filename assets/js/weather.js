@@ -1,5 +1,6 @@
 var button = document.querySelector('.button')
 var inputValue = document.querySelector('.inputValue')
+var name = document.querySelector('.name');
 var date = document.querySelector('.date');
 var desc = document.querySelector('.desc');
 var icon = document.querySelector('.icon');
