@@ -213,7 +213,15 @@ input[type="submit"]{
 }
 
 .display{
-    text-align: center;
+    text-align: left;
+    width: 500px;
+    height: 500px;
+    border: 2px solid;
+    background-color: rgb(240, 240, 147);
+    border-radius: 5px;
+    font-family: "Satisfy", sans-serif;
+    font-size: 20px;
+    padding: 10px 3px;
 }
 
 textarea {
