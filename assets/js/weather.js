@@ -15,7 +15,7 @@ var icon3 = document.querySelector('.icon3');
 var temp3 = document.querySelector('.temp3');
 
 button.addEventListener('click',function(){
-fetch('https://api.openweathermap.org/data/2.5/forecast?q='+inputValue.value+'&appid=c599e8cf88222b89d3d7fce3b12be2a1')
+fetch('https://api.openweathermap.org/data/2.5/forecast?q='+inputValue.value+'&appid=c599e8cf88222b89d3d7fce3b12be2a1&units=metric')
 .then(response => response.json())
 .then(data => {
     nameValue = data['city']['name'];
