@@ -75,6 +75,10 @@ li {
 
 body {
     padding: 0px; 
+    background-color: rgb(240, 240, 147);
+}
+
+.body1 {
     background-image: url("plane.jpg");
     background-repeat: no-repeat;
     background-position: center 50px;
@@ -214,19 +218,44 @@ input[type="submit"]{
 
 .display{
     text-align: center;
-    position: center;
-    width: 1000px;
-    height: 400px;
+    height: 200px;
     border: 2px solid;
     background-color: rgb(240, 240, 147);
     border-radius: 5px;
     font-family: "Satisfy", sans-serif;
     font-size: 20px;
     padding: 10px 5px;
+    overflow: hidden;
+}
+
+.display1{
+    text-align: center;
+    float: right;
+    width: 60%;
+    border: 2px solid;
+    background-color: rgb(240, 240, 147);
+    border-radius: 5px;
+    font-family: "Satisfy", sans-serif;
+    font-size: 20px;
+    padding: 10px 5px;
+    bottom: 50px;
+}
+
+.display2{
+    text-align: center;
+    float: right;
+    width: 35%;
+    border: 2px solid;
+    background-color: rgb(240, 240, 147);
+    border-radius: 5px;
+    font-family: "Satisfy", sans-serif;
+    font-size: 20px;
+    padding: 10px 5px;
+    bottom: 50px;
 }
 
 .column {
-    width: 33%;
+    width: 15%;
     padding: 10px;
 }
 
@@ -247,14 +276,78 @@ textarea {
 }
 
 html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 #map {
-        height: 50%;
-      }
+    height: 50%;
+    margin-bottom: 25px ;
+}
+
+input[type=text]:disabled {
+    background: #dddddd;
+}
+
+#exchange {
+    width:80%;
+}
+
+#amount {
+    width:80%;
+}
+
+#from {
+    width:80%;
+}
+
+#to {
+    width:80%;
+}
+
+.column1 {
+    width: 75%;
+}
+
+.column3 {
+    width: 20%;
+}
+
+.tableStyle {
+    margin-left:20px;
+}
+
+.tableWidth {
+    width: 45%;
+}
+
+.tableWidth1 {
+    width: 30%;
+}
+
+.tableBorder {
+    border: 3px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+table td {
+    font-size: 15px;
+}
+
+table {
+table-layout: fixed;
+width: 90%;
+margin-top: 10px;
+}
+
+.bkColor{
+    background-color: rgb(240, 240, 147);
+    padding: none;
+}
+
+
 
 /*----------Footer---------*/
 
