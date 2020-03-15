@@ -58,8 +58,8 @@
                         <h5 class="displayCenter"> Currency Converter</h5>
                         <table>
                             <tr>
-                                <td class="tableWidth1"><input type="text" id="amount" placeholder="Enter an amount" onkeyup="currencyConverter();"/></td>
-                                <td class="tableWidth1"><select id="from" onchange="currencyConverter();" />
+                                <td class="tableWidth1"><input type="text" class="amount" placeholder="Enter an amount" onkeyup="currencyConverter();"/></td>
+                                <td class="tableWidth1"><select class="from" onchange="currencyConverter();" />
                                     <option value="" selected>Currency Converting From</option>
                                     <option value="AUD">Australian Dollar</option>
                                     <option value="USD">American Dollar</option>
@@ -75,8 +75,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><input type="text" id="exchange" disabled/></td>
-                                <td><select id="to" onchange="currencyConverter();" />
+                                <td><input type="text" class="exchange" disabled/></td>
+                                <td><select class="to" onchange="currencyConverter();" />
                                     <option value="" selected>Currency Converting To</option>
                                     <option value="AUD">Australian Dollar</option>
                                     <option value="USD">American Dollar</option>
@@ -90,6 +90,9 @@
                                     <option value="NOK">Norway Kroner</option>
                                     </select>
                                 </td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit"  value="Submit" class="button1"></td>
                             </tr>
                         </table>
                     </div>
@@ -120,26 +123,5 @@
         <script src="assets/js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqY5c5NpZ_TXP8kMlbhSkxeqrFQw6fMAQ&libraries=places&callback=initMap"
     async defer></script>
-    <script>
-    function currencyConverter()
-    {
-        var from = getElementByID("from").value;
-        var to = getElementByID("to").value;
-        var xmlhttp = new XMLHttpRequest();
-        var url ="http://data.fixer.io/api/latest?access_key=a4d6fa9ce8bfb156d0704dc14a5ec25c&symbols="+ from + "," + to +;
-        xmlhttp.open("GET", url, true);
-        xmlhttp.send();
-        xmlhttp.onreadystatechange = function () {
-            if(xmlhttp.readystate == 4 && xmlhttp.status == 200)
-            {
-                var result = xmlhttp.responseText;
-                var jsonResult = JSON.parse(result);
-                var unit = jsonResult.rates(to)/jsonResult.rates(from);
-                var fromAmount = getElementByID("amount").value;
-                document.getElementByID("exchange").value = (unit*fromAmount).toFixed(2);
-            }
-        }
-    }
-    </script>
     </body>
 </html>
