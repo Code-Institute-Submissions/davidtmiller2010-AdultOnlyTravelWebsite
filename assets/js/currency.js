@@ -24,9 +24,10 @@ function convertCurrency(amount, fromCurrency, toCurrency, cb) {
             
             var val = jsonObj[query];
             if (val) {
+              console.log(val)
               var total = val * amount;
               cb(null, Math.round(total * 100) / 100);
-              exchange.innerHTML=cb;
+
             } else {
               var err = new Error("Value not found for " + query);
               console.log(err);
