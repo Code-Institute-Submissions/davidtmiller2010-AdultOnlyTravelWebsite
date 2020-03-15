@@ -316,6 +316,7 @@ input[type=text]:disabled {
 
 .tableStyle {
     margin-left:20px;
+    
 }
 
 .tableWidth {
@@ -330,6 +331,16 @@ input[type=text]:disabled {
     border: 3px solid black;
     padding: 10px;
     text-align: left;
+    background-color: lightgrey;
+}
+
+.tableBorder1 {
+    border: 3px solid black;
+    padding: 10px;
+    text-align: left;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif;
+    background-color: lightblue;
 }
 
 table td {
