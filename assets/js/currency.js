@@ -5,7 +5,7 @@ var from = document.querySelector('.from');
 var to = document.querySelector('.to');
 
 button.addEventListener('click',function(){
-fetch('http://data.fixer.io/api/latest?symbols=' + from + ',' + to + '&access_key=a4d6fa9ce8bfb156d0704dc14a5ec25c')
+fetch('https://free.currconv.com/api/v7/convert?q='+ from + '_' + to + '&compact=ultra&apiKey=7fcad69c743cb87e4a7a')
 .then(response => response.json())
 .then(data => console.log(data))
 .catch(err => alert("Please Try Again"))
