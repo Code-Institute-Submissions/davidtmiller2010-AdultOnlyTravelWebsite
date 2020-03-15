@@ -1,4 +1,4 @@
-var https = require('https');
+
 
 function convertCurrency(amount, fromCurrency, toCurrency, cb) {
   var apiKey = '7fcad69c743cb87e4a7ayour-api-key-here';
