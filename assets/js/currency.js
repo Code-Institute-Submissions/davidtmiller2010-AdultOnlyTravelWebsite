@@ -11,7 +11,7 @@ button.addEventListener('click',function(){
 rates = data['rates'];})
     })
 
-for (var i = 0; i < obj.length; i++){
+for (var i = 0; i < rates.length; i++){
 if (rates[i] == from);{
 console.log(i);
 
