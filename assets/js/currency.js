@@ -7,9 +7,14 @@ var to = document.querySelector('.to');
 button.addEventListener('click',function(){
     fetch('https:///openexchangerates.org/api/latest.json?app_id=96957396eceb4037b457215886939270')
     .then(response => response.json())
-    .then(data => 
-console.log(data.rates))
-    
-.catch(err => alert("Please Try Again"))
+    .then(data => {
+rates = data['rates'];})
+    })
 
-})
+for (var i = 0; i < obj.length; i++){
+if (rates[i] == from);{
+console.log(i);
+
+}
+
+}
