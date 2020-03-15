@@ -1,45 +1,19 @@
+var button = document.querySelector('.button1')
+var fromAmount = document.querySelector('amount');
+var exchange = document.querySelector('.exchange');
+var from = document.querySelector('.from')
+;var to = document.querySelector('.to');
 
+button.addEventListener('click',function(){
+    fetch('https://api.exchangeratesapi.io/latest?symbols='+ from + ',' + to )
+    .then(response => response.json())
+    .then(data => {
+        unitFrom = data['rates'][0];
+        unitTo = data['rates'][1];
+        unit = unitTo/unitFrom;
+        exchange.innerHTML =unit.toFixed(2);
+    
+        })
+.catch(err => alert("Please Try Again"))
 
-function convertCurrency(amount, fromCurrency, toCurrency, cb) {
-  var apiKey = '7fcad69c743cb87e4a7ayour-api-key-here';
-
-  amount = document.querySelector('amount');
-  fromCurrency = document.querySelector('from');
-  toCurrency = document.querySelector('to');
-  var query = fromCurrency + '_' + toCurrency;
-
-  var url = 'https://api.currconv.com/api/v7/convert?q='
-            + query + '&compact=ultra&apiKey=' + apiKey;
-
-  https.get(url, function(res){
-      var body = '';
-
-      res.on('data', function(chunk){
-          body += chunk;
-      });
-
-      res.on('end', function(){
-          try {
-            var jsonObj = JSON.parse(body);
-            
-            var val = jsonObj[query];
-            if (val) {
-              console.log(val)
-              var total = val * amount;
-              cb(null, Math.round(total * 100) / 100);
-
-            } else {
-              var err = new Error("Value not found for " + query);
-              console.log(err);
-              cb(err);
-            }
-          } catch(e) {
-            console.log("Parse error: ", e);
-            cb(e);
-          }
-      });
-  }).on('error', function(e){
-        console.log("Got an error: ", e);
-        cb(e);
-  });
-}
+})
