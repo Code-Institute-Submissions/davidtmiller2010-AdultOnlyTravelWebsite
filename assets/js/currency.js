@@ -9,4 +9,4 @@ fetch('http://data.fixer.io/api/latest?symbols=' + from + ',' + to + '&access_ke
 .then(response => response.json())
 .then(data => console.log(data))
 .catch(err => alert("Please Try Again"))
-})
+}
