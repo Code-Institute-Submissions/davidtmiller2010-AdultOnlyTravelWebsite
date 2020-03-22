@@ -81,6 +81,9 @@ This project was deployed to GitHub on on every push to master. This allowed for
 
 Versions of the deployed code can be viewed [here](https://github.com/davidtmiller2010/AdultOnlyTravelWebsite)
 
+##Bugs
+Issues with Google API Key have meant that although the search function in the map was initially working at time of development and testing, access to this has been revoked by Google since then. 
+This issue has not been resolved with google at time of submission.
 
 ## Credits
 Acknowledgements
