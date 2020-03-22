@@ -407,3 +407,170 @@ ul.currencies {
   position: relative;
   float: right;
 }
+
+/*----------Media Queries---------*/
+
+@media screen and (max-width: 767px) {
+    /* Mobile */
+
+     .responsive {
+        overflow: auto;
+        height: 100%;
+        width: 340px;
+        margin: 0;
+    }
+
+    .splitSection {
+        width: 100%;
+        top:220px;
+    }
+
+    .splitSection2 {
+        width: 100%;
+        top:50px;
+        position: relative;
+    }
+
+    .right {
+        right: 10px;
+        padding-left: 10px;
+    }
+
+    .splitSection3 {
+        width: 100%;
+        top: 300px;
+    }
+
+    .splitSection4 {
+        width: 100%;
+        position: relative;
+        top: 50px;
+    }
+
+    .bold {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .startDate {
+        width: 100%;
+        background-color: beige;
+    }
+
+    .endDate {
+        width: 100%;
+        background-color: beige;
+    }
+
+    .display1 {
+        width: 100%;
+    }
+
+    .display2 {
+        width: 100%;
+    }
+
+    .col-6{
+        max-width: 100%;
+        flex: none;
+    }
+
+    .contactPosition {
+        width:50%;
+        float: left;
+        font-size: 14px;
+    }
+
+    .linkPosition {
+        width:50%;
+        font-size: 14px;
+    }
+
+    .titleStyle {
+        font-size: 25px;
+    }
+
+    .navbar {
+        font-size: 13px;
+    }
+
+    .tableStyle {
+        font-size: 11px;
+    }
+
+    .tableBorder {
+        font-size: 11px;
+    }
+
+    .tableBorder1 {
+        font-size: 11px;
+    }
+}
+
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Tablet */
+
+    .responsive {
+        /*only for devices (min-width:768px) and (max-width:1000px)*/
+        overflow: auto;
+        height: 100%;
+        width: 660px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .bold {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .splitSection {
+        width: 100%;
+        top:100px;
+    }
+
+    .splitSection2 {
+        width: 100%;
+        top:30px;
+        position: relative;
+    }
+
+    .right {
+        right: 10px;
+        padding-left: 60px;
+    }
+
+    .splitSection3 {
+        width: 100%; 
+    }
+
+    .splitSection4 {
+        width: 100%;
+        position: relative;
+        top: 50px;
+    }
+
+    .startDate {
+        width: 100%;
+        background-color: beige;
+    }
+    
+    .endDate {
+        width: 100%;
+        background-color: beige;
+    }
+
+    .display1 {
+        width: 100%;
+    }
+
+    .display2 {
+        width: 100%;
+    }
+
+    .col-6{
+        max-width: 100%;
+        flex: none;
+    }
+}

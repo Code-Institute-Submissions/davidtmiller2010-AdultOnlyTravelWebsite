@@ -16,13 +16,13 @@ button.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       descValue = data["list"][3]["weather"][0]["description"];
-      tempValue = data["list"][3]["main"]["temp"];
+      tempValue = data["list"][3]["main"]["temp"].toFixed(0);
 
       desc2Value = data["list"][11]["weather"][0]["description"];
-      temp2Value = data["list"][11]["main"]["temp"];
+      temp2Value = data["list"][11]["main"]["temp"].toFixed(0);
 
       desc3Value = data["list"][19]["weather"][0]["description"];
-      temp3Value = data["list"][19]["main"]["temp"];
+      temp3Value = data["list"][19]["main"]["temp"].toFixed(0);
 
       desc.innerHTML = descValue;
       temp.innerHTML = tempValue;
