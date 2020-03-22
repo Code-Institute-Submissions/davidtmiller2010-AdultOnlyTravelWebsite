@@ -87,7 +87,7 @@ This issue has not been resolved with google at time of submission.
 
 ## Credits
 Acknowledgements
-- Google for use of their maps API and documentation on how to use.
+- Google for use of their maps API, code and documentation on how to use.
 - Fixer.io for use of their API for currencies.
 - EmailJS for use of their services of sending form inputs to emails.
 - Openweathermap for their API for weather.
