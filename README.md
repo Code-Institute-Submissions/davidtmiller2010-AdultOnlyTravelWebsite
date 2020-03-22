@@ -84,8 +84,8 @@ Versions of the deployed code can be viewed [here](https://github.com/davidtmill
 
 ## Credits
 Acknowledgements
-Google for use of their maps API and documentation on how to use.
-Fixer.io for use of their API for currencies.
-EmailJS for use of their services of sending form inputs to emails.
-Openweathermap for their API for weather.
+- Google for use of their maps API and documentation on how to use.
+- Fixer.io for use of their API for currencies.
+- EmailJS for use of their services of sending form inputs to emails.
+- Openweathermap for their API for weather.
 
